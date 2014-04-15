@@ -86,9 +86,9 @@ var RoboMemory = Backbone.View.extend({
       var unflipped = [], flipped = [];
       for(var i = 0; i < shuffledCards.length; i++) {
         if(i < 9) {
-          unflipped.push(shuffledCards[i]);
-        } else {
           flipped.push(shuffledCards[i]);
+        } else {
+          unflipped.push(shuffledCards[i]);
         }
       }
       self.model.set('flipped', flipped);
